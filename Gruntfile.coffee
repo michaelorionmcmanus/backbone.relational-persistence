@@ -9,7 +9,7 @@ module.exports = ->
 
     # Lint source, node, and test code with some sane options.
     jshint:
-      files: ["backbone.layoutmanager.js", "node/index.js"]
+      files: ["backbone.layoutmanager-persistence.js", "node/index.js"]
 
       # Allow certain options.
       options:
