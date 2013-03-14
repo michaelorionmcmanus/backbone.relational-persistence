@@ -1,0 +1,22 @@
+{
+  "author": "Michael McManus (@michaelorionmcmanus)",
+  "name": "backbone.relational-peristence",
+  "description": "Persistence tools for backbone relational.",
+  "version": "0.1.0",
+  "main": "node/index",
+  "engines": {
+    "node": "~0.8"
+  },
+  "dependencies": {
+    "backbone": "~0.9.10",
+    "underscore.deferred": "~0.4",
+    "underscore": "~1.4"
+  },
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-cli": "~0.1",
+    "grunt-contrib-jshint": "0.1.1rc5",
+    "grunt-contrib-qunit": "0.1.1rc5",
+    "grunt-nodequnit": "~0.1"
+  }
+}
