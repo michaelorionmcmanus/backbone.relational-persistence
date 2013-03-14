@@ -7,6 +7,9 @@
   "engines": {
     "node": "~0.8"
   },
+  "scripts": {
+    "test": "grunt"
+  },
   "dependencies": {
     "backbone": "~0.9.10",
     "underscore.deferred": "~0.4",
