@@ -1,0 +1,1393 @@
+{
+    "project": {
+        "name": "backbone.relational-peristence",
+        "description": "Persistence tools for backbone relational.",
+        "version": "0.1.0",
+        "url": ""
+    },
+    "files": {
+        "test/qunit/qunit.js": {
+            "name": "test/qunit/qunit.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "test/vendor/jquery.js": {
+            "name": "test/vendor/jquery.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "backbone.relational-persistence.js": {
+            "name": "backbone.relational-persistence.js",
+            "modules": {},
+            "classes": {
+                "RelationalPersistence": 1
+            },
+            "fors": {
+                "RelationalPersistence": 1
+            },
+            "namespaces": {}
+        },
+        "backbone.relational.js": {
+            "name": "backbone.relational.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "RelationalPersistence": {
+            "name": "RelationalPersistence",
+            "shortname": "RelationalPersistence",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "backbone.relational-persistence.js",
+            "line": 10,
+            "extends": "Backbone.RelationalModel"
+        }
+    },
+    "classitems": [
+        {
+            "file": "test/qunit/qunit.js",
+            "line": 1,
+            "description": "QUnit v1.3.0pre - A JavaScript Unit Testing Framework\n\nhttp://docs.jquery.com/QUnit\n\nCopyright (c) 2011 John Resig, Jörn Zaefferer\nDual licensed under the MIT (MIT-LICENSE.txt)\nor GPL (GPL-LICENSE.txt) licenses.",
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/qunit/qunit.js",
+            "line": 303,
+            "description": "Specify the number of expected assertions to gurantee that failed test (no assertions are run at all) don't slip through.",
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/qunit/qunit.js",
+            "line": 310,
+            "description": "Asserts true.",
+            "example": [
+                " ok( \"asdfasdf\".length > 5, \"There must be at least 5 chars\" );"
+            ],
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/qunit/qunit.js",
+            "line": 328,
+            "description": "Checks that the first two arguments are equal, with an optional message.\nPrints out both actual and expected values.\n\nPrefered to ok( actual == expected, message )",
+            "example": [
+                " equal( format(\"Received {0} bytes.\", 2), \"Received 2 bytes.\" );"
+            ],
+            "params": [
+                {
+                    "name": "Object",
+                    "description": "actual"
+                },
+                {
+                    "name": "Object",
+                    "description": "expected"
+                },
+                {
+                    "name": "String",
+                    "description": "message (optional)"
+                }
+            ],
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/qunit/qunit.js",
+            "line": 564,
+            "description": "Resets the test setup. Useful for tests that modify the DOM.\n\nIf jQuery is available, uses jQuery's html(), otherwise just innerHTML.",
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/qunit/qunit.js",
+            "line": 580,
+            "description": "Trigger an event on an element.",
+            "example": [
+                " triggerEvent( document.body, \"click\" );"
+            ],
+            "params": [
+                {
+                    "name": "DOMElement",
+                    "description": "elem"
+                },
+                {
+                    "name": "String",
+                    "description": "type"
+                }
+            ],
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/qunit/qunit.js",
+            "line": 1234,
+            "description": "jsDump Copyright (c) 2008 Ariel Flesler - aflesler(at)gmail(dot)com |\nhttp://flesler.blogspot.com Licensed under BSD\n(http://www.opensource.org/licenses/bsd-license.php) Date: 5/15/2008",
+            "projectdescription": "Advanced and extensible data dumping for Javascript.",
+            "version": "1.0.0",
+            "author": "Ariel Flesler",
+            "link": "{http://flesler.blogspot.com/2008/05/jsdump-pretty-dump-of-any-javascript.html}",
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/vendor/jquery.js",
+            "line": 3823,
+            "description": "For feature detection",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "The function to test for native support",
+                    "type": "Function"
+                }
+            ],
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/vendor/jquery.js",
+            "line": 3831,
+            "description": "Create key-value caches of limited size",
+            "return": {
+                "description": "Returns the Object data after storing it on itself with\n\tproperty name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)\n\tdeleting the oldest entry",
+                "type": "Function(string, Object)"
+            },
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/vendor/jquery.js",
+            "line": 3851,
+            "description": "Mark a function for special use by Sizzle",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "The function to mark",
+                    "type": "Function"
+                }
+            ],
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/vendor/jquery.js",
+            "line": 3860,
+            "description": "Support testing using an element",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "Passed the created div and expects a boolean result",
+                    "type": "Function"
+                }
+            ],
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/vendor/jquery.js",
+            "line": 3987,
+            "description": "Detect xml",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "An element or a document",
+                    "type": "Element|Object"
+                }
+            ],
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/vendor/jquery.js",
+            "line": 3998,
+            "description": "Sets document-related variables once based on the current document",
+            "params": [
+                {
+                    "name": "doc",
+                    "description": "An element or document object to use to set the document",
+                    "type": "Element|Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "Returns the current document",
+                "type": "Object"
+            },
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "test/vendor/jquery.js",
+            "line": 4486,
+            "description": "Utility function for retrieving the text value of an array of DOM nodes",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "",
+                    "type": "Array|Element"
+                }
+            ],
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "backbone.relational-persistence.js",
+            "line": 15,
+            "description": "Constructor override",
+            "itemtype": "method",
+            "name": "constructor",
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "backbone.relational-persistence.js",
+            "line": 30,
+            "description": "The model's original attributes. Initialized in\n{{#crossLink \"RelationalPersistence/setOriginalAttributes:method\"}}{{/crossLink}}",
+            "access": "protected",
+            "tagname": "",
+            "itemtype": "property",
+            "name": "_originalAttributes",
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "backbone.relational-persistence.js",
+            "line": 39,
+            "description": "Set the original attributes on the model. Typically called when the model is synced with\nthe remote data store.",
+            "itemtype": "method",
+            "name": "setOriginalAttributes",
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "backbone.relational-persistence.js",
+            "line": 50,
+            "description": "Unbinds the call to {{#crossLink \"RelationalPersistence/setOriginalAttributes:method\"}}{{/crossLink}} from \nthe \"sync\" event.",
+            "itemtype": "method",
+            "name": "unbindOriginalAttributes",
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "backbone.relational-persistence.js",
+            "line": 61,
+            "description": "Restore the last known \"clean\" set of attributes. Use `Backbone.Model.prototype.set` to restore the \nattributes since `Backbone.RelationalModel` overrides `set` to handle relations.",
+            "itemtype": "method",
+            "name": "restoreOriginalAttributes",
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "backbone.relational-persistence.js",
+            "line": 74,
+            "description": "Check to see whether or not the model is dirty. Compares {{#crossLink \"RelationalPersistence/_originalAttributes:property\"}}{{/crossLink}}\nto `this.attributes`.",
+            "itemtype": "method",
+            "name": "isDirty",
+            "return": {
+                "description": "`true` if the model is dirty, `false` otherwise.",
+                "type": "Boolean"
+            },
+            "class": "RelationalPersistence"
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 2,
+            "description": "Backbone-relational.js 0.8.0\n(c) 2011-2013 Paul Uithol and contributors (https://github.com/PaulUithol/Backbone-relational/graphs/contributors)\n\nBackbone-relational may be freely distributed under the MIT license; see the accompanying LICENSE.txt.\nFor details and documentation: https://github.com/PaulUithol/Backbone-relational.\nDepends on Backbone (and thus on Underscore as well): https://github.com/documentcloud/backbone.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 13,
+            "description": "CommonJS shim",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 32,
+            "description": "Semaphore mixin; can be used as both binary and counting.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 69,
+            "description": "A BlockingQueue that accumulates items while blocked (via 'block'),\nand processes them when unblocked (via 'unblock').\nProcess can also be called manually (via 'process').",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 110,
+            "description": "Global event queue. Accumulates external events ('add:<key>', 'remove:<key>' and 'change:<key>')\nuntil the top-level object is fully initialized (see 'Backbone.RelationalModel').",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 116,
+            "description": "Backbone.Store keeps track of all created (and destruction of) Backbone.RelationalModel.\nHandles lookup for relations.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 128,
+            "description": "Create a new `Relation`.",
+            "params": [
+                {
+                    "name": "model",
+                    "description": "",
+                    "type": "Backbone.RelationalModel",
+                    "optional": true
+                },
+                {
+                    "name": "relation",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "options",
+                    "description": "",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 144,
+            "description": "Add a scope for `getObjectByName` to look for model types by name.",
+            "params": [
+                {
+                    "name": "scope",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 152,
+            "description": "Add a set of subModelTypes to the store, that can be used to resolve the '_superModel'\nfor a model later in 'setupSuperModel'.",
+            "params": [
+                {
+                    "name": "subModelTypes",
+                    "description": "",
+                    "type": "Backbone.RelationalModel"
+                },
+                {
+                    "name": "superModelType",
+                    "description": "",
+                    "type": "Backbone.RelationalModel"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 166,
+            "description": "Check if the given modelType is registered as another model's subModel. If so, add it to the super model's\n'_subModels', and set the modelType's '_superModel', '_subModelTypeName', and '_subModelTypeAttribute'.",
+            "params": [
+                {
+                    "name": "modelType",
+                    "description": "",
+                    "type": "Backbone.RelationalModel"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 191,
+            "description": "Add a reverse relation. Is added to the 'relations' property on model's prototype, and to\nexisting instances of 'model' in the store as well.",
+            "params": [
+                {
+                    "name": "relation",
+                    "description": "",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "model",
+                            "description": "",
+                            "type": "Backbone.RelationalModel"
+                        },
+                        {
+                            "name": "type",
+                            "description": "",
+                            "type": "String"
+                        },
+                        {
+                            "name": "key",
+                            "description": "",
+                            "type": "String"
+                        },
+                        {
+                            "name": "relatedModel",
+                            "description": "",
+                            "type": "String|Object"
+                        }
+                    ]
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 214,
+            "description": "Deposit a `relation` for which the `relatedModel` can't be resolved at the moment.",
+            "params": [
+                {
+                    "name": "relation",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 231,
+            "description": "Try to initialize any `_orphanRelation`s",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 245,
+            "params": [
+                {
+                    "name": "type",
+                    "description": "",
+                    "type": "Backbone.RelationalModel.constructor"
+                },
+                {
+                    "name": "relation",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 262,
+            "description": "Add a 'relation' to all existing instances of 'relation.model' in the store",
+            "params": [
+                {
+                    "name": "relation",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 277,
+            "description": "Find the Store's collection for a certain type of model.",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "",
+                    "type": "Backbone.RelationalModel"
+                },
+                {
+                    "name": "create",
+                    "description": "Should a collection be created if none is found?",
+                    "type": "Boolean",
+                    "optional": true,
+                    "optdefault": "true"
+                }
+            ],
+            "return": {
+                "description": "A collection if found (or applicable for 'model'), or null",
+                "type": "Backbone.Collection"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 302,
+            "description": "Find a model type on one of the modelScopes by name. Names are split on dots.",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 343,
+            "description": "Find the attribute that is to be used as the `id` on a given object",
+            "params": [
+                {
+                    "name": "type",
+                    "description": ""
+                },
+                {
+                    "name": "item",
+                    "description": "",
+                    "type": "String|Number|Object|Backbone.RelationalModel"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String|Number"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 369,
+            "params": [
+                {
+                    "name": "type",
+                    "description": ""
+                },
+                {
+                    "name": "item",
+                    "description": "",
+                    "type": "String|Number|Object|Backbone.RelationalModel"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 391,
+            "description": "Add a 'model' to its appropriate collection. Retain the original contents of 'model.collection'.",
+            "params": [
+                {
+                    "name": "model",
+                    "description": "",
+                    "type": "Backbone.RelationalModel"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 413,
+            "description": "Explicitly update a model's id in its store collection",
+            "params": [
+                {
+                    "name": "model",
+                    "description": "",
+                    "type": "Backbone.RelationalModel"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 422,
+            "description": "Remove a 'model' from the store.",
+            "params": [
+                {
+                    "name": "model",
+                    "description": "",
+                    "type": "Backbone.RelationalModel"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 432,
+            "description": "Reset the `store` to it's original state. The `reverseRelations` are kept though, since attempting to\nre-initialize these on models would lead to a large amount of warnings.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 445,
+            "description": "The main Relation class, from which 'HasOne' and 'HasMany' inherit. Internally, 'relational:<key>' events\nare used to regulate addition and removal of models from relations.",
+            "params": [
+                {
+                    "name": "instance",
+                    "description": "Model that this relation is created for. If no model is supplied,\n     Relation just tries to instantiate it's `reverseRelation` if specified, and bails out after that.",
+                    "type": "Backbone.RelationalModel",
+                    "optional": true
+                },
+                {
+                    "name": "options",
+                    "description": "",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "key",
+                            "description": "",
+                            "type": "String"
+                        },
+                        {
+                            "name": "relatedModel",
+                            "description": "",
+                            "type": "Backbone.RelationalModel.constructor"
+                        },
+                        {
+                            "name": "includeInJSON",
+                            "description": "Serialize the given attribute for related model(s)' in toJSON, or just their ids.",
+                            "type": "Boolean|String",
+                            "optional": true,
+                            "optdefault": "true"
+                        },
+                        {
+                            "name": "createModels",
+                            "description": "Create objects from the contents of keys if the object is not found in Backbone.store.",
+                            "type": "Boolean",
+                            "optional": true,
+                            "optdefault": "true"
+                        },
+                        {
+                            "name": "reverseRelation",
+                            "description": "Specify a bi-directional relation. If provided, Relation will reciprocate\n   the relation to the 'relatedModel'. Required and optional properties match 'options', except that it also needs\n   {Backbone.Relation|String} type ('HasOne' or 'HasMany').",
+                            "type": "Object",
+                            "optional": true
+                        }
+                    ]
+                },
+                {
+                    "name": "opts",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 546,
+            "description": "Check several pre-conditions.",
+            "return": {
+                "description": "True if pre-conditions are satisfied, false if they're not.",
+                "type": "Boolean"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 592,
+            "description": "Set the related model(s) for this relation",
+            "params": [
+                {
+                    "name": "related",
+                    "description": "",
+                    "type": "Backbone.Model|Backbone.Collection"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 604,
+            "description": "Determine if a relation (on a different RelationalModel) is the reverse\nrelation of the current one.",
+            "params": [
+                {
+                    "name": "relation",
+                    "description": "",
+                    "type": "Backbone.Relation"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 615,
+            "description": "Get the reverse relations (pointing back to 'this.key' on 'this.instance') for the currently related model(s).",
+            "params": [
+                {
+                    "name": "model",
+                    "description": "Get the reverse relations for a specific model.\n   If not specified, 'this.related' is used.",
+                    "type": "Backbone.RelationalModel",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Backbone.Relation[]"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 636,
+            "description": "When `this.instance` is destroyed, cleanup our relations.\nGet reverse relation, call removeRelated on each.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 673,
+            "description": "Find related Models.",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Backbone.Model"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 694,
+            "description": "Normalize and reduce `keyContents` to an `id`, for easier comparison",
+            "params": [
+                {
+                    "name": "keyContents",
+                    "description": "",
+                    "type": "String|Number|Backbone.Model"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 703,
+            "description": "Event handler for `change:<key>`.\nIf the key is changed, notify old & new reverse relations and initialize the new relation.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 753,
+            "description": "If a new 'this.relatedModel' appears in the 'store', try to match it to the last set 'keyContents'",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 815,
+            "description": "Bind events and setup collectionKeys for a collection that is to be used as the backing store for a HasMany.\nIf no 'collection' is supplied, a new collection will be created of the specified 'collectionType' option.",
+            "params": [
+                {
+                    "name": "collection",
+                    "description": "",
+                    "type": "Backbone.Collection",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Backbone.Collection"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 855,
+            "description": "Find related Models.",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Backbone.Collection"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 900,
+            "description": "Normalize and reduce `keyContents` to a list of `ids`, for easier comparison",
+            "params": [
+                {
+                    "name": "keyContents",
+                    "description": "",
+                    "type": "String|Number|String[]|Number[]|Backbone.Collection"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 921,
+            "description": "Event handler for `change:<key>`.\nIf the contents of the key are changed, notify old & new reverse relations and initialize the new relation.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 945,
+            "description": "When a model is added to a 'HasMany', trigger 'add' on 'this.instance' and notify reverse relations.\n(should be 'HasOne', must set 'this.instance' as their related).",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 965,
+            "description": "When a model is removed from a 'HasMany', trigger 'remove' on 'this.instance' and notify reverse relations.\n(should be 'HasOne', which should be nullified)",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1019,
+            "description": "A type of Backbone.Model that also maintains relations to other models and collections.\nNew events when compared to the original:\n - 'add:<key>' (model, related collection, options)\n - 'remove:<key>' (model, related collection, options)\n - 'change:<key>' (model, related model or collection, options)",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1080,
+            "description": "Override 'trigger' to queue 'change' and 'change:*' events",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1132,
+            "description": "Initialize Relations present in this.relations; determine the type (HasOne/HasMany), then creates a new instance.\nInvoked in the first call so 'set' (which is made from the Backbone.Model constructor).",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1149,
+            "description": "When new values are set, notify this model's relations (also if options.silent is set).\n(Relation.setRelated locks this model before calling 'set' on it to prevent loops)",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1165,
+            "description": "Either add to the queue (if we're not initialized yet), or execute right away.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1172,
+            "description": "Process _queue",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1181,
+            "description": "Get a specific relation.",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "The relation key to look for.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "An instance of 'Backbone.Relation', if a relation was found for 'key', or null.",
+                "type": "Backbone.Relation"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1190,
+            "description": "Get all of the created relations.",
+            "return": {
+                "description": "",
+                "type": "Backbone.Relation[]"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1198,
+            "description": "Retrieve related objects.",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "The relation key to fetch models for.",
+                    "type": "String"
+                },
+                {
+                    "name": "options",
+                    "description": "Options for 'Backbone.Model.fetch' and 'Backbone.sync'.",
+                    "type": "Object",
+                    "optional": true
+                },
+                {
+                    "name": "refresh",
+                    "description": "Fetch existing models from the server as well (in order to update them).",
+                    "type": "Boolean",
+                    "optional": true,
+                    "optdefault": "false"
+                }
+            ],
+            "return": {
+                "description": "An array of request objects",
+                "type": "jQuery.when[]"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1383,
+            "description": "Convert relations to JSON, omits them when required",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1458,
+            "params": [
+                {
+                    "name": "superModel",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Backbone.RelationalModel.constructor"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1489,
+            "description": "The related model might not be defined for two reasons\n 1. it is related to itself\n 2. it never gets defined, e.g. a typo\n 3. the model hasn't been defined yet, but will be later\nIn neither of these cases do we need to pre-initialize reverse relations.\nHowever, for 3. (which is, to us, indistinguishable from 2.), we do need to attempt\nsetting up this relation again later, in case the related model is defined later.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1514,
+            "description": "Create a 'Backbone.Model' instance based on 'attributes'.",
+            "params": [
+                {
+                    "name": "attributes",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "options",
+                    "description": "",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Backbone.Model"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1539,
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1577,
+            "description": "Find an instance of `this` type in 'Backbone.Relational.store'.\n- If `attributes` is a string or a number, `findOrCreate` will just query the `store` and return a model if found.\n- If `attributes` is an object and is found in the store, the model will be updated with `attributes` unless `options.update` is `false`.\n  Otherwise, a new model is created with `attributes` (unless `options.create` is explicitly set to `false`).",
+            "params": [
+                {
+                    "name": "attributes",
+                    "description": "Either a model's id, or the attributes used to create or update a model.",
+                    "type": "Object|String|Number"
+                },
+                {
+                    "name": "options",
+                    "description": "",
+                    "type": "Object",
+                    "optional": true,
+                    "props": [
+                        {
+                            "name": "create",
+                            "description": "",
+                            "type": "Boolean",
+                            "optional": true,
+                            "optdefault": "true"
+                        },
+                        {
+                            "name": "merge",
+                            "description": "",
+                            "type": "Boolean",
+                            "optional": true,
+                            "optdefault": "true"
+                        },
+                        {
+                            "name": "parse",
+                            "description": "",
+                            "type": "Boolean",
+                            "optional": true,
+                            "optdefault": "false"
+                        }
+                    ]
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Backbone.RelationalModel"
+            },
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1613,
+            "description": "Override Backbone.Collection._prepareModel, so objects will be built using the correct type\nif the collection.model has subModels.\nAttempts to find a model for `attrs` in Backbone.store through `findOrCreate`\n(which sets the new properties on it if found), or instantiates a new model.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1650,
+            "description": "Override Backbone.Collection.add, so we'll create objects from attributes where required,\nand update the existing models. Also, trigger 'relational:add'.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1701,
+            "description": "Override 'Backbone.Collection.remove' to trigger 'relational:remove'.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1733,
+            "description": "Override 'Backbone.Collection.reset' to trigger 'relational:reset'.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1747,
+            "description": "Override 'Backbone.Collection.sort' to trigger 'relational:reset'.",
+            "class": ""
+        },
+        {
+            "file": "backbone.relational.js",
+            "line": 1761,
+            "description": "Override 'Backbone.Collection.trigger' so 'add', 'remove' and 'reset' events are queued until relations\nare ready.",
+            "class": ""
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: projectdescription",
+            "line": " test/qunit/qunit.js:1234"
+        },
+        {
+            "message": "unknown tag: version",
+            "line": " test/qunit/qunit.js:1234"
+        },
+        {
+            "message": "unknown tag: link",
+            "line": " test/qunit/qunit.js:1234"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " test/vendor/jquery.js:3831"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " test/vendor/jquery.js:3998"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " backbone.relational.js:1458"
+        },
+        {
+            "message": "Missing item type\nQUnit v1.3.0pre - A JavaScript Unit Testing Framework\n\nhttp://docs.jquery.com/QUnit\n\nCopyright (c) 2011 John Resig, Jörn Zaefferer\nDual licensed under the MIT (MIT-LICENSE.txt)\nor GPL (GPL-LICENSE.txt) licenses.",
+            "line": " test/qunit/qunit.js:1"
+        },
+        {
+            "message": "Missing item type\nSpecify the number of expected assertions to gurantee that failed test (no assertions are run at all) don't slip through.",
+            "line": " test/qunit/qunit.js:303"
+        },
+        {
+            "message": "Missing item type\nAsserts true.",
+            "line": " test/qunit/qunit.js:310"
+        },
+        {
+            "message": "Missing item type\nChecks that the first two arguments are equal, with an optional message.\nPrints out both actual and expected values.\n\nPrefered to ok( actual == expected, message )",
+            "line": " test/qunit/qunit.js:328"
+        },
+        {
+            "message": "Missing item type\nResets the test setup. Useful for tests that modify the DOM.\n\nIf jQuery is available, uses jQuery's html(), otherwise just innerHTML.",
+            "line": " test/qunit/qunit.js:564"
+        },
+        {
+            "message": "Missing item type\nTrigger an event on an element.",
+            "line": " test/qunit/qunit.js:580"
+        },
+        {
+            "message": "Missing item type\njsDump Copyright (c) 2008 Ariel Flesler - aflesler(at)gmail(dot)com |\nhttp://flesler.blogspot.com Licensed under BSD\n(http://www.opensource.org/licenses/bsd-license.php) Date: 5/15/2008",
+            "line": " test/qunit/qunit.js:1234"
+        },
+        {
+            "message": "Missing item type\nFor feature detection",
+            "line": " test/vendor/jquery.js:3823"
+        },
+        {
+            "message": "Missing item type\nCreate key-value caches of limited size",
+            "line": " test/vendor/jquery.js:3831"
+        },
+        {
+            "message": "Missing item type\nMark a function for special use by Sizzle",
+            "line": " test/vendor/jquery.js:3851"
+        },
+        {
+            "message": "Missing item type\nSupport testing using an element",
+            "line": " test/vendor/jquery.js:3860"
+        },
+        {
+            "message": "Missing item type\nDetect xml",
+            "line": " test/vendor/jquery.js:3987"
+        },
+        {
+            "message": "Missing item type\nSets document-related variables once based on the current document",
+            "line": " test/vendor/jquery.js:3998"
+        },
+        {
+            "message": "Missing item type\nUtility function for retrieving the text value of an array of DOM nodes",
+            "line": " test/vendor/jquery.js:4486"
+        },
+        {
+            "message": "Missing item type\nBackbone-relational.js 0.8.0\n(c) 2011-2013 Paul Uithol and contributors (https://github.com/PaulUithol/Backbone-relational/graphs/contributors)\n\nBackbone-relational may be freely distributed under the MIT license; see the accompanying LICENSE.txt.\nFor details and documentation: https://github.com/PaulUithol/Backbone-relational.\nDepends on Backbone (and thus on Underscore as well): https://github.com/documentcloud/backbone.",
+            "line": " backbone.relational.js:2"
+        },
+        {
+            "message": "Missing item type\nCommonJS shim",
+            "line": " backbone.relational.js:13"
+        },
+        {
+            "message": "Missing item type\nSemaphore mixin; can be used as both binary and counting.",
+            "line": " backbone.relational.js:32"
+        },
+        {
+            "message": "Missing item type\nA BlockingQueue that accumulates items while blocked (via 'block'),\nand processes them when unblocked (via 'unblock').\nProcess can also be called manually (via 'process').",
+            "line": " backbone.relational.js:69"
+        },
+        {
+            "message": "Missing item type\nGlobal event queue. Accumulates external events ('add:<key>', 'remove:<key>' and 'change:<key>')\nuntil the top-level object is fully initialized (see 'Backbone.RelationalModel').",
+            "line": " backbone.relational.js:110"
+        },
+        {
+            "message": "Missing item type\nBackbone.Store keeps track of all created (and destruction of) Backbone.RelationalModel.\nHandles lookup for relations.",
+            "line": " backbone.relational.js:116"
+        },
+        {
+            "message": "Missing item type\nCreate a new `Relation`.",
+            "line": " backbone.relational.js:128"
+        },
+        {
+            "message": "Missing item type\nAdd a scope for `getObjectByName` to look for model types by name.",
+            "line": " backbone.relational.js:144"
+        },
+        {
+            "message": "Missing item type\nAdd a set of subModelTypes to the store, that can be used to resolve the '_superModel'\nfor a model later in 'setupSuperModel'.",
+            "line": " backbone.relational.js:152"
+        },
+        {
+            "message": "Missing item type\nCheck if the given modelType is registered as another model's subModel. If so, add it to the super model's\n'_subModels', and set the modelType's '_superModel', '_subModelTypeName', and '_subModelTypeAttribute'.",
+            "line": " backbone.relational.js:166"
+        },
+        {
+            "message": "Missing item type\nAdd a reverse relation. Is added to the 'relations' property on model's prototype, and to\nexisting instances of 'model' in the store as well.",
+            "line": " backbone.relational.js:191"
+        },
+        {
+            "message": "Missing item type\nDeposit a `relation` for which the `relatedModel` can't be resolved at the moment.",
+            "line": " backbone.relational.js:214"
+        },
+        {
+            "message": "Missing item type\nTry to initialize any `_orphanRelation`s",
+            "line": " backbone.relational.js:231"
+        },
+        {
+            "message": "Missing item type",
+            "line": " backbone.relational.js:245"
+        },
+        {
+            "message": "Missing item type\nAdd a 'relation' to all existing instances of 'relation.model' in the store",
+            "line": " backbone.relational.js:262"
+        },
+        {
+            "message": "Missing item type\nFind the Store's collection for a certain type of model.",
+            "line": " backbone.relational.js:277"
+        },
+        {
+            "message": "Missing item type\nFind a model type on one of the modelScopes by name. Names are split on dots.",
+            "line": " backbone.relational.js:302"
+        },
+        {
+            "message": "Missing item type\nFind the attribute that is to be used as the `id` on a given object",
+            "line": " backbone.relational.js:343"
+        },
+        {
+            "message": "Missing item type",
+            "line": " backbone.relational.js:369"
+        },
+        {
+            "message": "Missing item type\nAdd a 'model' to its appropriate collection. Retain the original contents of 'model.collection'.",
+            "line": " backbone.relational.js:391"
+        },
+        {
+            "message": "Missing item type\nExplicitly update a model's id in its store collection",
+            "line": " backbone.relational.js:413"
+        },
+        {
+            "message": "Missing item type\nRemove a 'model' from the store.",
+            "line": " backbone.relational.js:422"
+        },
+        {
+            "message": "Missing item type\nReset the `store` to it's original state. The `reverseRelations` are kept though, since attempting to\nre-initialize these on models would lead to a large amount of warnings.",
+            "line": " backbone.relational.js:432"
+        },
+        {
+            "message": "Missing item type\nThe main Relation class, from which 'HasOne' and 'HasMany' inherit. Internally, 'relational:<key>' events\nare used to regulate addition and removal of models from relations.",
+            "line": " backbone.relational.js:445"
+        },
+        {
+            "message": "Missing item type\nCheck several pre-conditions.",
+            "line": " backbone.relational.js:546"
+        },
+        {
+            "message": "Missing item type\nSet the related model(s) for this relation",
+            "line": " backbone.relational.js:592"
+        },
+        {
+            "message": "Missing item type\nDetermine if a relation (on a different RelationalModel) is the reverse\nrelation of the current one.",
+            "line": " backbone.relational.js:604"
+        },
+        {
+            "message": "Missing item type\nGet the reverse relations (pointing back to 'this.key' on 'this.instance') for the currently related model(s).",
+            "line": " backbone.relational.js:615"
+        },
+        {
+            "message": "Missing item type\nWhen `this.instance` is destroyed, cleanup our relations.\nGet reverse relation, call removeRelated on each.",
+            "line": " backbone.relational.js:636"
+        },
+        {
+            "message": "Missing item type\nFind related Models.",
+            "line": " backbone.relational.js:673"
+        },
+        {
+            "message": "Missing item type\nNormalize and reduce `keyContents` to an `id`, for easier comparison",
+            "line": " backbone.relational.js:694"
+        },
+        {
+            "message": "Missing item type\nEvent handler for `change:<key>`.\nIf the key is changed, notify old & new reverse relations and initialize the new relation.",
+            "line": " backbone.relational.js:703"
+        },
+        {
+            "message": "Missing item type\nIf a new 'this.relatedModel' appears in the 'store', try to match it to the last set 'keyContents'",
+            "line": " backbone.relational.js:753"
+        },
+        {
+            "message": "Missing item type\nBind events and setup collectionKeys for a collection that is to be used as the backing store for a HasMany.\nIf no 'collection' is supplied, a new collection will be created of the specified 'collectionType' option.",
+            "line": " backbone.relational.js:815"
+        },
+        {
+            "message": "Missing item type\nFind related Models.",
+            "line": " backbone.relational.js:855"
+        },
+        {
+            "message": "Missing item type\nNormalize and reduce `keyContents` to a list of `ids`, for easier comparison",
+            "line": " backbone.relational.js:900"
+        },
+        {
+            "message": "Missing item type\nEvent handler for `change:<key>`.\nIf the contents of the key are changed, notify old & new reverse relations and initialize the new relation.",
+            "line": " backbone.relational.js:921"
+        },
+        {
+            "message": "Missing item type\nWhen a model is added to a 'HasMany', trigger 'add' on 'this.instance' and notify reverse relations.\n(should be 'HasOne', must set 'this.instance' as their related).",
+            "line": " backbone.relational.js:945"
+        },
+        {
+            "message": "Missing item type\nWhen a model is removed from a 'HasMany', trigger 'remove' on 'this.instance' and notify reverse relations.\n(should be 'HasOne', which should be nullified)",
+            "line": " backbone.relational.js:965"
+        },
+        {
+            "message": "Missing item type\nA type of Backbone.Model that also maintains relations to other models and collections.\nNew events when compared to the original:\n - 'add:<key>' (model, related collection, options)\n - 'remove:<key>' (model, related collection, options)\n - 'change:<key>' (model, related model or collection, options)",
+            "line": " backbone.relational.js:1019"
+        },
+        {
+            "message": "Missing item type\nOverride 'trigger' to queue 'change' and 'change:*' events",
+            "line": " backbone.relational.js:1080"
+        },
+        {
+            "message": "Missing item type\nInitialize Relations present in this.relations; determine the type (HasOne/HasMany), then creates a new instance.\nInvoked in the first call so 'set' (which is made from the Backbone.Model constructor).",
+            "line": " backbone.relational.js:1132"
+        },
+        {
+            "message": "Missing item type\nWhen new values are set, notify this model's relations (also if options.silent is set).\n(Relation.setRelated locks this model before calling 'set' on it to prevent loops)",
+            "line": " backbone.relational.js:1149"
+        },
+        {
+            "message": "Missing item type\nEither add to the queue (if we're not initialized yet), or execute right away.",
+            "line": " backbone.relational.js:1165"
+        },
+        {
+            "message": "Missing item type\nProcess _queue",
+            "line": " backbone.relational.js:1172"
+        },
+        {
+            "message": "Missing item type\nGet a specific relation.",
+            "line": " backbone.relational.js:1181"
+        },
+        {
+            "message": "Missing item type\nGet all of the created relations.",
+            "line": " backbone.relational.js:1190"
+        },
+        {
+            "message": "Missing item type\nRetrieve related objects.",
+            "line": " backbone.relational.js:1198"
+        },
+        {
+            "message": "Missing item type\nConvert relations to JSON, omits them when required",
+            "line": " backbone.relational.js:1383"
+        },
+        {
+            "message": "Missing item type",
+            "line": " backbone.relational.js:1458"
+        },
+        {
+            "message": "Missing item type\nThe related model might not be defined for two reasons\n 1. it is related to itself\n 2. it never gets defined, e.g. a typo\n 3. the model hasn't been defined yet, but will be later\nIn neither of these cases do we need to pre-initialize reverse relations.\nHowever, for 3. (which is, to us, indistinguishable from 2.), we do need to attempt\nsetting up this relation again later, in case the related model is defined later.",
+            "line": " backbone.relational.js:1489"
+        },
+        {
+            "message": "Missing item type\nCreate a 'Backbone.Model' instance based on 'attributes'.",
+            "line": " backbone.relational.js:1514"
+        },
+        {
+            "message": "Missing item type",
+            "line": " backbone.relational.js:1539"
+        },
+        {
+            "message": "Missing item type\nFind an instance of `this` type in 'Backbone.Relational.store'.\n- If `attributes` is a string or a number, `findOrCreate` will just query the `store` and return a model if found.\n- If `attributes` is an object and is found in the store, the model will be updated with `attributes` unless `options.update` is `false`.\n  Otherwise, a new model is created with `attributes` (unless `options.create` is explicitly set to `false`).",
+            "line": " backbone.relational.js:1577"
+        },
+        {
+            "message": "Missing item type\nOverride Backbone.Collection._prepareModel, so objects will be built using the correct type\nif the collection.model has subModels.\nAttempts to find a model for `attrs` in Backbone.store through `findOrCreate`\n(which sets the new properties on it if found), or instantiates a new model.",
+            "line": " backbone.relational.js:1613"
+        },
+        {
+            "message": "Missing item type\nOverride Backbone.Collection.add, so we'll create objects from attributes where required,\nand update the existing models. Also, trigger 'relational:add'.",
+            "line": " backbone.relational.js:1650"
+        },
+        {
+            "message": "Missing item type\nOverride 'Backbone.Collection.remove' to trigger 'relational:remove'.",
+            "line": " backbone.relational.js:1701"
+        },
+        {
+            "message": "Missing item type\nOverride 'Backbone.Collection.reset' to trigger 'relational:reset'.",
+            "line": " backbone.relational.js:1733"
+        },
+        {
+            "message": "Missing item type\nOverride 'Backbone.Collection.sort' to trigger 'relational:reset'.",
+            "line": " backbone.relational.js:1747"
+        },
+        {
+            "message": "Missing item type\nOverride 'Backbone.Collection.trigger' so 'add', 'remove' and 'reset' events are queued until relations\nare ready.",
+            "line": " backbone.relational.js:1761"
+        }
+    ]
+}
