@@ -1,7 +1,7 @@
 Backbone Relational Model Persistence
 =====================================
 [![Build
-Status](https://travis-ci.org/ShopIgniter/backbone.relational-persistence.png?branch=master)](https://travis-ci.org/michaelorionmcmanus/backbone.relational-persistence)
+Status](https://travis-ci.org/ShopIgniter/backbone.relational-persistence.png?branch=master)](https://travis-ci.org/ShopIgniter/backbone.relational-persistence)
 
 ###Change is hard. We try to make it suck less.
 
