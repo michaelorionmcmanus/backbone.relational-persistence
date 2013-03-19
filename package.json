@@ -20,6 +20,7 @@
     "grunt-cli": "~0.1",
     "grunt-contrib-jshint": "0.1.1rc5",
     "grunt-contrib-qunit": "0.1.1rc5",
-    "grunt-nodequnit": "~0.1"
+    "grunt-nodequnit": "~0.1",
+    "grunt-contrib-yuidoc": "~0.4.0"
   }
 }

@@ -6,7 +6,7 @@ module.exports = ->
 
   # Initialize the configuration.
   @initConfig
-
+    pkg: @file.readJSON('package.json')
     # Lint source, node, and test code with some sane options.
     jshint:
       files: ["backbone.layoutmanager-persistence.js", "node/index.js"]
@@ -32,10 +32,22 @@ module.exports = ->
         code: "."
         testsDir: "test/"
 
+    # Generate documentation with YUI doc
+    yuidoc:
+      compile:
+        name: '<%= pkg.name %>'
+        description: '<%= pkg.description %>'
+        version: '<%= pkg.version %>'
+        url: '<%= pkg.homepage %>'
+        options:
+          paths: './'
+          outdir: 'docs'
+        
   # Load external Grunt task plugins.
   @loadNpmTasks "grunt-contrib-jshint"
   @loadNpmTasks "grunt-contrib-qunit"
   @loadNpmTasks "grunt-nodequnit"
+  @loadNpmTasks "grunt-contrib-yuidoc"
 
   # Default task.
-  @registerTask "default", ["jshint", "qunit", "nodequnit"]
+  @registerTask "default", ["jshint", "qunit", "nodequnit", "yuidoc"]
